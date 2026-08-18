@@ -10,10 +10,10 @@ database_id = "<YOUR_D1_DATABASE_ID>"
 
 # Environment Variables
 [vars]
-DOMAIN = "your-domain.pages.dev" # Or your custom domain
-USERNAME = "admin"
-PASSWORD = "your_secure_password"
-ENABLE_AUTH = "false" # Set to "true" to require basic auth for uploads and root
-TG_BOT_TOKEN = "1234567890:ABCdefGHIjklMNOpqrsTUVwxyz"
-TG_CHAT_ID = "-1001234567890" # Your Telegram channel or group ID
-MAX_SIZE_MB = "20" # Max file size limit in MB (default: 20)
+DOMAIN = "ar-hosting.pages.dev" # Your deployed Pages / Workers domain (without protocol)
+USERNAME = "admin" # Required: Username for /admin, /admin/api/media, and /delete-images
+PASSWORD = "your_secure_password" # Required: Password for /admin, /admin/api/media, and /delete-images
+ENABLE_AUTH = "false" # Optional: Set to "true" to lock root (/) and uploads (/upload, /hosturl) behind Basic Auth
+TG_BOT_TOKEN = "1234567890:ABCdefGHIjklMNOpqrsTUVwxyz" # Telegram Bot API token from @BotFather
+TG_CHAT_ID = "-1001234567890" # Telegram Channel / Group ID where media is stored
+MAX_SIZE_MB = "20" # Optional: Max upload file size in MB (default: 20)
