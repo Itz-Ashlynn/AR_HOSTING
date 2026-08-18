@@ -1,0 +1,19 @@
+name = "ar-hosting"
+main = "_worker.js"
+compatibility_date = "2026-08-19"
+
+# Cloudflare D1 Database Binding
+[[d1_databases]]
+binding = "DATABASE"
+database_name = "ar_hosting_db"
+database_id = "<YOUR_D1_DATABASE_ID>"
+
+# Environment Variables
+[vars]
+DOMAIN = "your-domain.pages.dev" # Or your custom domain
+USERNAME = "admin"
+PASSWORD = "your_secure_password"
+ENABLE_AUTH = "false" # Set to "true" to require basic auth for uploads and root
+TG_BOT_TOKEN = "1234567890:ABCdefGHIjklMNOpqrsTUVwxyz"
+TG_CHAT_ID = "-1001234567890" # Your Telegram channel or group ID
+MAX_SIZE_MB = "20" # Max file size limit in MB (default: 20)
